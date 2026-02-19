@@ -3,11 +3,11 @@ import { use, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, Globe, Github, Calendar, User, Tag } from "lucide-react";
 import Link from "next/link";
-import { endpoints } from "../../../api/endpoints.ts";
-import { ProjectsSchema } from "../../../schemas/project.schema.ts";
-import type { Project } from "../../../schemas/project.schema.ts";
-import { api } from "../../../api/axios.ts";
-import Section from "../../../components/ui/Section.tsx";
+import { endpoints } from "../../../api/endpoints";
+import { ProjectsSchema } from "../../../schemas/project.schema";
+import type { Project } from "../../../schemas/project.schema";
+import { api } from "../../../api/axios";
+import Section from "../../../components/ui/Section";
 
 export default function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params);

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { z } from "zod";
-import { api } from "../api/axios.ts";
+import { api } from "../api/axios";
 
 type Status = "idle" | "loading" | "success" | "error";
 

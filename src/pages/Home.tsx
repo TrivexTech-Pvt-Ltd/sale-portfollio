@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Github, Twitter, Linkedin, Instagram, Code2, Smartphone, Layout, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import Section from "../components/ui/Section.tsx";
-import Heading from "../components/ui/Heading.tsx";
-import Button from "../components/ui/Button.tsx";
-import ServiceCard from "../components/ServiceCard.tsx";
-import SEO from "../components/SEO.tsx";
+import Section from "../components/ui/Section";
+import Heading from "../components/ui/Heading";
+import Button from "../components/ui/Button";
+import ServiceCard from "../components/ServiceCard";
+import SEO from "../components/SEO";
 
 export default function Home() {
     return (

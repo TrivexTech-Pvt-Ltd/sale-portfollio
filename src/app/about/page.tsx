@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { Cpu, Globe, Layout, Smartphone, CheckCircle2 } from "lucide-react";
-import Section from "../../components/ui/Section.tsx";
-import Heading from "../../components/ui/Heading.tsx";
+import Section from "../../components/ui/Section";
+import Heading from "../../components/ui/Heading";
 
 const skills = [
     { name: "Frontend Development", icon: <Layout />, desc: "React, Vue, Tailwind CSS, Framer Motion" },

@@ -1,6 +1,6 @@
-// import { api } from "./axios.ts";
-// import { endpoints } from "./endpoints.ts";
-import type { ContactForm } from "../schemas/contact.schema.ts";
+// import { api } from "./axios";
+// import { endpoints } from "./endpoints";
+import type { ContactForm } from "../schemas/contact.schema";
 
 export async function sendContactMessage(payload: ContactForm) {
     // For now: fake send (mock)

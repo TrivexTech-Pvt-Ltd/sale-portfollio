@@ -3,8 +3,8 @@ import { use } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, CheckCircle2, Code2, Smartphone, Cloud, Cpu, Layout, Zap, Rocket, Shield, Globe } from "lucide-react";
 import Link from "next/link";
-import Section from "../../../components/ui/Section.tsx";
-import Button from "../../../components/ui/Button.tsx";
+import Section from "../../../components/ui/Section";
+import Button from "../../../components/ui/Button";
 
 const serviceData: Record<string, any> = {
     "custom-software": {

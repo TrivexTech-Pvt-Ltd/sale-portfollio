@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar.tsx";
-import Footer from "../components/Footer.tsx";
-import ScrollToTop from "../components/ScrollToTop.tsx";
-import ThemeSwitcher from "../components/ThemeSwitcher.tsx";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 const poppins = Poppins({
     variable: "--font-poppins",

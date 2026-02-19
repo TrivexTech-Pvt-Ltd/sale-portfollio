@@ -1,11 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import { endpoints } from "../../api/endpoints.ts";
-import { ProjectsSchema } from "../../schemas/project.schema.ts";
-import { useFetch } from "../../hooks/useFetch.ts";
-import ProjectCard from "../../components/ProjectCard.tsx";
-import Section from "../../components/ui/Section.tsx";
-import Heading from "../../components/ui/Heading.tsx";
+import { endpoints } from "../../api/endpoints";
+import { ProjectsSchema } from "../../schemas/project.schema";
+import { useFetch } from "../../hooks/useFetch";
+import ProjectCard from "../../components/ProjectCard";
+import Section from "../../components/ui/Section";
+import Heading from "../../components/ui/Heading";
 
 export default function ProjectsPage() {
     const { data, status, error } = useFetch(endpoints.projects, ProjectsSchema);

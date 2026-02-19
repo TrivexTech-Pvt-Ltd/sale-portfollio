@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import type { Project } from "../schemas/project.schema.ts";
+import type { Project } from "../schemas/project.schema";
 
 export default function ProjectCard({ project }: { project: Project }) {
     return (

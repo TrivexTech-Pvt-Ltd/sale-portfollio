@@ -2,11 +2,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, Mail, MapPin, Phone, CheckCircle2, AlertCircle } from "lucide-react";
-import { ContactSchema } from "../../schemas/contact.schema.ts";
-import type { ContactForm } from "../../schemas/contact.schema.ts";
-import { sendContactMessage } from "../../api/contact.api.ts";
-import Section from "../../components/ui/Section.tsx";
-import Heading from "../../components/ui/Heading.tsx";
+import { ContactSchema } from "../../schemas/contact.schema";
+import type { ContactForm } from "../../schemas/contact.schema";
+import { sendContactMessage } from "../../api/contact.api";
+import Section from "../../components/ui/Section";
+import Heading from "../../components/ui/Heading";
 
 export default function ContactPage() {
     const [form, setForm] = useState<ContactForm>({

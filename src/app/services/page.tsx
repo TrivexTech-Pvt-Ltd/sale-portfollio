@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import { Code2, Smartphone, Cloud, Cpu, Layout } from "lucide-react";
-import Section from "../../components/ui/Section.tsx";
-import Heading from "../../components/ui/Heading.tsx";
-import Button from "../../components/ui/Button.tsx";
-import ServiceCard from "../../components/ServiceCard.tsx";
+import Section from "../../components/ui/Section";
+import Heading from "../../components/ui/Heading";
+import Button from "../../components/ui/Button";
+import ServiceCard from "../../components/ServiceCard";
 
 const services = [
     {
