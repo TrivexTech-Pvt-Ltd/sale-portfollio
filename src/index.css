@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #ff6b00;
+    --primary-hover: #e66000;
+    --primary-light: rgba(255, 107, 0, 0.1);
+}
+
+@layer base {
+    body {
+        @apply bg-dark text-dark-text font-sans antialiased;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        background-color: var(--primary) !important;
+        @apply text-white px-6 py-2.5 rounded-lg font-semibold transition-all inline-block text-center shadow-lg shadow-black/20;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--primary-hover) !important;
+        @apply -translate-y-0.5 shadow-xl;
+    }
+
+    .btn-outline {
+        @apply border border-gray-600 text-gray-400 px-6 py-2.5 rounded-lg font-semibold hover:border-white hover:text-white transition-all inline-block text-center;
+    }
+
+    .nav-link {
+        @apply text-gray-400 transition-colors font-medium;
+    }
+
+    .nav-link:hover {
+        color: var(--primary) !important;
+    }
+
+    .nav-link-active {
+        color: var(--primary) !important;
+    }
+
+    /* Target specific headings that should change with theme */
+    h1 .accent,
+    h2 .accent,
+    h3 .accent,
+    .text-accent {
+        color: var(--primary) !important;
+    }
+
+    /* Force tailwind orange classes to use variables */
+    .text-orange {
+        color: var(--primary) !important;
+    }
+
+    .bg-orange {
+        background-color: var(--primary) !important;
+    }
+
+    .border-orange {
+        border-color: var(--primary) !important;
+    }
+}

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Accent Colors (Default Orange) */
+    --primary: #ff6b00;
+    --primary-hover: #e66000;
+    --primary-light: rgba(255, 107, 0, 0.1);
+
+    /* Default (Dark Mode) Variables */
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+    --border-main: #1f2937;
+}
+
+[data-theme='light'] {
+    --bg-main: #f9fafb;
+    --bg-card: #ffffff;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+    --border-main: #e5e7eb;
+}
+
+@layer base {
+    body {
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        @apply font-sans antialiased transition-colors duration-300;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--text-main);
+    }
+}
+
+@layer components {
+    .btn-primary {
+        background-color: var(--primary) !important;
+        @apply text-white px-6 py-2.5 rounded-lg font-semibold transition-all inline-block text-center shadow-lg shadow-black/20;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--primary-hover) !important;
+        @apply -translate-y-0.5 shadow-xl;
+    }
+
+    .btn-outline {
+        border-color: var(--border-main);
+        color: var(--text-muted);
+        @apply border px-6 py-2.5 rounded-lg font-semibold hover:border-white hover:text-white transition-all inline-block text-center;
+    }
+
+    .nav-link {
+        color: var(--text-muted);
+        @apply transition-colors font-medium;
+    }
+
+    .nav-link:hover {
+        color: var(--primary) !important;
+    }
+
+    .nav-link-active {
+        color: var(--primary) !important;
+    }
+
+    .bg-theme-bg {
+        background-color: var(--bg-main);
+    }
+
+    .bg-theme-card {
+        background-color: var(--bg-card);
+    }
+
+    .text-theme-text {
+        color: var(--text-main);
+    }
+
+    .text-theme-muted {
+        color: var(--text-muted);
+    }
+
+    .border-theme-border {
+        border-color: var(--border-main);
+    }
+
+    .text-orange {
+        color: var(--primary) !important;
+    }
+
+    .bg-orange {
+        background-color: var(--primary) !important;
+    }
+
+    .border-orange {
+        border-color: var(--primary) !important;
+    }
+}

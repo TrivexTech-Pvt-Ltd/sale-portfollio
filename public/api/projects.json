@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "title": "E-commerce Platform",
+        "description": "A full-stack e-commerce platform built with React and .NET Core. Features include product management, shopping cart, and payment integration.",
+        "tech": [
+            "React",
+            "TypeScript",
+            ".NET Core",
+            "SQL Server"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
+        "githubUrl": "https://github.com"
+    },
+    {
+        "id": "2",
+        "title": "Portfolio Website",
+        "description": "A responsive portfolio website showcasing projects and skills. Built with React, Vite, and Tailwind CSS.",
+        "tech": [
+            "React",
+            "Vite",
+            "Tailwind CSS",
+            "Zod"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
+        "liveUrl": "https://prasa.dev"
+    }
+]
