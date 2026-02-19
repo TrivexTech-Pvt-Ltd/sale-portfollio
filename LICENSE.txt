@@ -1,0 +1,24 @@
+COMMERCIAL END USER LICENSE AGREEMENT
+
+Product: Sales Portfolio Website Template
+Version: 1.0
+
+This License Agreement is a legal agreement between the purchaser ("Licensee") and the creator of the Sales Portfolio Website Template. By downloading or using this template, you agree to be bound by the following terms:
+
+1. ALLOWED USAGE
+- You may use the template to create one or more personal websites.
+- You may use the template to create websites for your clients as part of a freelance or agency service.
+- You may modify the source code, design, and assets to suit your specific needs.
+
+2. RESTRICTIONS
+- You may NOT resell, redistribute, or sublicense the template or its source code, in whole or in part, in its original or modified form.
+- You may NOT include this template in any website builder, theme bundle, or "freebie" collection.
+- You may NOT claim ownership of the original design or code.
+
+3. NO WARRANTY
+THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE TEMPLATE OR THE USE OR OTHER DEALINGS IN THE TEMPLATE.
+
+4. LIMITATION OF LIABILITY
+Under no circumstances shall the creator be liable for any direct, indirect, special, incidental, or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials provided.
+
+Copyright (c) 2026. All Rights Reserved.
