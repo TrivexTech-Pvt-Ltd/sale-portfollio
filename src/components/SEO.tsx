@@ -1,42 +1,33 @@
-import { Helmet } from "react-helmet-async";
+"use client";
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
-    title: string;
-    description: string;
+    title?: string;
+    description?: string;
     keywords?: string;
-    image?: string;
-    url?: string;
+    author?: string;
 }
 
-export default function SEO({
+const SEO: React.FC<SEOProps> = ({
     title,
-    description,
-    keywords = "Software Engineer, Portfolio, John Doe, Web Development, Mobile Development, React, .NET",
-    image = "/og-image.jpg",
-    url = "https://JohnDoe.dev"
-}: SEOProps) {
-    const fullTitle = `${title} | John Doe`;
+    description = "Expert Software Engineer specializing in high-performance digital experiences.",
+    keywords,
+    author = "John Doe"
+}) => {
+    const siteTitle = title ? `${title} | John Doe` : "John Doe | UI/UX Developer";
 
     return (
         <Helmet>
-            {/* Basic Meta Tags */}
-            <title>{fullTitle}</title>
+            <title>{siteTitle}</title>
             <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />
-
-            {/* Open Graph / Facebook */}
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content={url} />
-            <meta property="og:title" content={fullTitle} />
+            {keywords && <meta name="keywords" content={keywords} />}
+            <meta name="author" content={author} />
+            <meta property="og:title" content={siteTitle} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content={image} />
-
-            {/* Twitter */}
-            <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content={url} />
-            <meta property="twitter:title" content={fullTitle} />
-            <meta property="twitter:description" content={description} />
-            <meta property="twitter:image" content={image} />
+            <meta property="og:type" content="website" />
         </Helmet>
     );
-}
+};
+
+export default SEO;

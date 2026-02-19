@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 
+import HelmetClientProvider from "../components/HelmetClientProvider";
+
 const poppins = Poppins({
     variable: "--font-poppins",
     subsets: ["latin"],
@@ -57,11 +59,13 @@ export default function RootLayout({
                 />
             </head>
             <body className={`${poppins.variable} antialiased bg-theme-bg text-theme-text transition-colors duration-300`}>
-                <Navbar />
-                <main>{children}</main>
-                <ThemeSwitcher />
-                <Footer />
-                <ScrollToTop />
+                <HelmetClientProvider>
+                    <Navbar />
+                    <main>{children}</main>
+                    <ThemeSwitcher />
+                    <Footer />
+                    <ScrollToTop />
+                </HelmetClientProvider>
             </body>
         </html>
     );
